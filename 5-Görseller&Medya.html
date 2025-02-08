@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Görseller ve Medya Kullanımı</title>
+</head>
+<body>
+    <!-- Resim Kullanımı -->
+    <h2>Resim Örneği</h2>
+    <img src="ornek-resim.jpg" alt="Örnek Resim" width="300">
+    <!-- 'src' özelliği, resim dosyasının yolunu belirtir. 'alt' özelliği, resim yüklenemediğinde gösterilecek alternatif metni belirtir. -->
+
+    <!-- Video Kullanımı -->
+    <h2>Video Örneği</h2>
+    <video controls>
+        <source src="ornek-video.mp4" type="video/mp4">
+        Tarayıcınız video etiketini desteklemiyor.
+    </video>
+    <!-- 'controls' özelliği, video oynatma kontrollerini gösterir. 'source' etiketi, video dosyasının yolunu ve türünü belirtir. -->
+
+    <!-- Ses Kullanımı -->
+    <h2>Ses Örneği</h2>
+    <audio controls>
+        <source src="ornek-ses.mp3" type="audio/mp3">
+        Tarayıcınız audio etiketini desteklemiyor.
+    </audio>
+    <!-- 'controls' özelliği, ses oynatma kontrollerini gösterir. 'source' etiketi, ses dosyasının yolunu ve türünü belirtir. -->
+
+    <!-- SVG Kullanımı -->
+    <h2>SVG Örneği</h2>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+    <!-- 'svg' etiketi, vektörel grafik çizmeyi sağlar. Bu örnekte bir daire çizilmiştir. -->
+
+    <!-- Canvas Kullanımı -->
+    <h2>Canvas Örneği</h2>
+    <canvas id="myCanvas" width="200" height="200" style="border:1px solid #000000;">
+        Tarayıcınız canvas etiketini desteklemiyor.
+    </canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(20, 20, 150, 100);
+    </script>
+    <!-- 'canvas' etiketi, dinamik grafikler çizmek için kullanılır. Bu örnekte kırmızı bir dikdörtgen çizilmiştir. -->
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar ve Kullanıcı Girdisi</title>
+</head>
+<body>
+    <h2>Örnek Form</h2>
+    <!-- Form Tanımı -->
+    <form action="/submit" method="post">
+        <!-- Etiketler ve Form Elemanları -->
+        <label for="isim">İsim:</label>
+        <input type="text" id="isim" name="isim" required placeholder="İsminizi girin">
+        <!-- 'required' özelliği, bu alanın doldurulmasını zorunlu kılar -->
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Email adresinizi girin">
+        <br><br>
+
+        <label for="mesaj">Mesaj:</label>
+        <textarea id="mesaj" name="mesaj" rows="4" cols="50" maxlength="500" placeholder="Mesajınızı yazın"></textarea>
+        <br><br>
+
+        <label for="sehir">Şehir:</label>
+        <select id="sehir" name="sehir">
+            <option value="istanbul">İstanbul</option>
+            <option value="ankara">Ankara</option>
+            <option value="izmir">İzmir</option>
+        </select>
+        <br><br>
+
+        <label for="cinsiyet">Cinsiyet:</label><br>
+        <input type="radio" id="erkek" name="cinsiyet" value="erkek">
+        <label for="erkek">Erkek</label><br>
+        <input type="radio" id="kadin" name="cinsiyet" value="kadin">
+        <label for="kadin">Kadın</label><br>
+        <br>
+
+        <label for="hobi">Hobiler:</label><br>
+        <input type="checkbox" id="muzik" name="hobi" value="muzik">
+        <label for="muzik">Müzik</label><br>
+        <input type="checkbox" id="spor" name="hobi" value="spor">
+        <label for="spor">Spor</label><br>
+        <input type="checkbox" id="seyahat" name="hobi" value="seyahat">
+        <label for="seyahat">Seyahat</label><br>
+        <br>
+
+        <label for="dosya">Dosya Yükleme:</label>
+        <input type="file" id="dosya" name="dosya">
+        <br><br>
+
+        <!-- Form Gönderme Butonu -->
+        <button type="submit">Gönder</button>
+        <!-- Alternatif olarak <input type="submit" value="Gönder"> kullanılabilir -->
+    </form>
+</body>
+</html>

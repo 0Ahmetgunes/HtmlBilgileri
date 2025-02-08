@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste ve Tablo Kullanımı</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        ul, ol {
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sırasız Liste (Unordered List) -->
+    <h2>Sırasız Liste</h2>
+    <ul>
+        <li>Elma</li>
+        <li>Armut</li>
+        <li>Çilek</li>
+    </ul>
+
+    <!-- Sıralı Liste (Ordered List) -->
+    <h2>Sıralı Liste</h2>
+    <ol>
+        <li>HTML Öğren</li>
+        <li>CSS Öğren</li>
+        <li>JavaScript Öğren</li>
+    </ol>
+
+    <!-- Açıklama Listesi (Definition List) -->
+    <h2>Açıklama Listesi</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Web sayfalarının temel yapı taşıdır.</dd>
+
+        <dt>CSS</dt>
+        <dd>Web sayfalarının tasarımını belirler.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Web sayfalarına etkileşim kazandırır.</dd>
+    </dl>
+
+    <!-- Tablo Kullanımı -->
+    <h2>Tablo Kullanımı</h2>
+    <table>
+        <!-- Tablo Başlığı -->
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Yaş</th>
+            </tr>
+        </thead>
+        <!-- Tablo Gövdesi -->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ahmet</td>
+                <td>Yılmaz</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Aylin</td>
+                <td>Demir</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mehmet</td>
+                <td>Kaya</td>
+                <td>28</td>
+            </tr>
+        </tbody>
+        <!-- Tablo Alt Bilgisi -->
+        <tfoot>
+            <tr>
+                <td colspan="4">Toplam Kişi: 3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

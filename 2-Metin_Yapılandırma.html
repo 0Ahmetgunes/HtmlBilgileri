@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metin ve Yapılandırma Etiketleri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            background-color: #f4f4f4;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Başlıklar: <h1> - <h6> -->
+    <h1>Başlık 1 (Ana Başlık)</h1>
+    <h2>Başlık 2 (Alt Başlık)</h2>
+    <h3>Başlık 3</h3>
+    <h4>Başlık 4</h4>
+    <h5>Başlık 5</h5>
+    <h6>Başlık 6</h6>
+
+    <!-- Paragraflar: <p> -->
+    <p>Bu bir paragraftır. Paragraflar, içerikleri düzenlemek için kullanılır.</p>
+    <p>İkinci paragraf. Paragraflar <br> etiketi ile satır atlatabilir.</p>
+
+    <!-- Satır İçi ve Blok Seviyesi Etiketler -->
+    <section>
+        <h2>Blok Seviyesi Etiketler</h2>
+        <div>
+            <p>Bu bir <strong>div</strong> etiketi içindeki paragraftır. Div, içerikleri gruplamak için kullanılır.</p>
+        </div>
+        <article>
+            <h3>Makale Başlığı</h3>
+            <p>Bu bir <em>article</em> etiketi içindeki paragraftır. Article, bağımsız içerikler için kullanılır.</p>
+        </article>
+        <aside>
+            <p>Bu bir <strong>aside</strong> etiketi. Genellikle yan içerikler için kullanılır.</p>
+        </aside>
+    </section>
+
+    <!-- Satır İçi (Inline) Etiketler -->
+    <p>Bu <span class="highlight">önemli</span> bir kelimedir. Span, belirli bir kelime veya cümleyi vurgulamak için kullanılır.</p>
+
+    <!-- Boşluk ve Satır Atlatma -->
+    <p>İki paragraf arasına yatay çizgi koymak için <hr> etiketi kullanılır.</p>
+    <hr>
+    <p>Bu ikinci paragraf, yatay çizginin altında başlıyor.</p>
+
+    <!-- Header ve Footer -->
+    <header>
+        <h1>Sayfa Başlığı</h1>
+    </header>
+
+    <footer>
+        <p>Telif Hakkı © 2025</p>
+    </footer>
+
+</body>
+</html>
+
+<!-- 
+
+Başlıklar (<h1> - <h6>)
+
+Sayfanın ana ve alt başlıklarını belirlemek için kullanılır.
+<h1> en büyük, <h6> en küçük başlıktır.
+Paragraflar (<p>)
+
+Metni düzenlemek için kullanılır.
+br etiketi ile satır atlanabilir.
+Blok Seviyesi Etiketler
+
+<div> → Gruplama amacıyla kullanılır.
+<section> → Sayfanın belirli bir bölümünü temsil eder.
+<article> → Bağımsız içerikler (blog yazıları, haberler) için kullanılır.
+<aside> → Yan içerik veya ek bilgileri göstermek için kullanılır.
+Satır İçi (Inline) Etiketler
+
+<span> → Metin içinde belirli bir kelime veya cümleyi biçimlendirmek için kullanılır.
+Boşluk ve Satır Atlatma
+
+<br> → Satır atlatmak için kullanılır.
+<hr> → İki paragraf veya bölüm arasında yatay çizgi eklemek için kullanılır.
+<header> ve <footer>
+
+<header> → Sayfanın başlık kısmını içerir.
+<footer> → Sayfanın alt bilgisini içerir (telif hakkı, iletişim bilgileri vb.).
+
+-->
